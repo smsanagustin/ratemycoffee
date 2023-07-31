@@ -6,8 +6,8 @@
                     <NuxtLink class="font-bold text-4xl" to="/">ratemycoffee</NuxtLink>
                 </div>
                 <ul class="flex gap-14 mt-2">
-                    <li><NuxtLink>HOME</NuxtLink></li>
-                    <li><NuxtLink>COFFEE SHOPS</NuxtLink></li>
+                    <li><NuxtLink to="/">HOME</NuxtLink></li>
+                    <li><NuxtLink to="/coffeeshops">COFFEE SHOPS</NuxtLink></li>
                     <li><NuxtLink>MOST RATED COFFEES</NuxtLink></li>
                 </ul>
                 <button class="bg-white rounded-md px-5 py-3 font-bold">

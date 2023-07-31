@@ -1,7 +1,7 @@
 <template>
     <div>
         <GeneralSearchBar class="m-12"/>
-        <div v-if="false" class="image-container">
+        <div v-if="!location" class="image-container">
             <img src="../assets/images//coffee-homepage-bg.jpg">
             <div class="location-sb-div">
                 <p class="text-white mb-5 text-2xl">Enter your location to see coffee reviews near you</p>
@@ -16,7 +16,7 @@
         <div v-else>
             <div class="coffees-near-you mx-20">
                 <p class="text-3xl mb-7">Coffee reviews near you</p>
-                <ShowReviews :showLocation="true"/>
+                <ShowReviews :showLocation="true" :location="location" class="mb-7"/>
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@
     const location = ref('')
 
     // list of places
-    const places = ['Silang, Cavite', 'Tagaytay, City', 'Los Banos, Laguna', 'Plaridel, Bulacan']
+    const places = ['Silang, Cavite', 'Tagaytay, Cavite', 'Los Banos, Laguna', 'Plaridel, Bulacan']
 
     const placesBasedOnUserInput = computed(() => {
         return places.filter(place => place.toLowerCase().includes(locationInput.value))

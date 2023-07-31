@@ -1,7 +1,7 @@
 <template>
     <div>
         <header class="m-0">
-            <nav class="text-white mx-auto p-8 px-16 flex justify-between">
+            <nav class="text-white mx-auto p-4 px-16 flex justify-between">
                 <div>
                     <NuxtLink class="font-bold text-4xl" to="/">ratemycoffee</NuxtLink>
                 </div>

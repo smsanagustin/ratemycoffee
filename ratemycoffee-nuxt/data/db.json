@@ -1,0 +1,364 @@
+{
+    "reviews": [
+        {
+            "id": "1",
+            "name": "Caramel Macchiato",
+            "price": "Php 150",
+            "shop": "Starbucks",
+            "location": "Silang, Cavite",
+            "temperature": "Hot",
+            "size": "medium",
+            "img": "../assets/images/carmach_starbucks.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "3",
+              "caffeine": "2",
+              "overall": "3"
+            },
+            "other_comments": "Great balance of caramel and espresso. A delightful treat!",
+            "likeCount": "10"
+          },
+          {
+            "id": "2",
+            "name": "Iced Americano",
+            "price": "Php 90",
+            "shop": "Coffee Bean",
+            "location": "Los Banos, Laguna",
+            "temperature": "Iced",
+            "size": "large",
+            "img": "../assets/images/americano_coffeebean.jpg",
+            "rating": {
+              "taste": "3",
+              "coldness": "5",
+              "caffeine": "4",
+              "overall": "4"
+            },
+            "other_comments": "Perfectly refreshing and strong. Just what I needed!",
+            "likeCount": "7"
+          },
+          {
+            "id": "3",
+            "name": "Chai Latte",
+            "price": "Php 120",
+            "shop": "Tea Time",
+            "location": "Tagaytay, Cavite",
+            "temperature": "Hot",
+            "size": "small",
+            "img": "../assets/images/chai_teatime.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "1",
+              "caffeine": "1",
+              "overall": "3"
+            },
+            "other_comments": "Love the aromatic blend of spices! It's a soothing drink.",
+            "likeCount": "3"
+          },
+          {
+            "id": "4",
+            "name": "Mocha Frappuccino",
+            "price": "Php 160",
+            "shop": "Starbucks",
+            "location": "Plaridel, Bulacan",
+            "temperature": "Iced",
+            "size": "medium",
+            "img": "../assets/images/mochafrap_starbucks.jpg",
+            "rating": {
+              "taste": "5",
+              "coldness": "5",
+              "caffeine": "3",
+              "overall": "5"
+            },
+            "other_comments": "My go-to drink for a perfect blend of coffee and chocolate.",
+            "likeCount": "12"
+          },
+          {
+            "id": "5",
+            "name": "Matcha Latte",
+            "price": "Php 130",
+            "shop": "Green Teas",
+            "location": "Silang, Cavite",
+            "temperature": "Hot",
+            "size": "small",
+            "img": "../assets/images/matchalatte_greenteas.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "2",
+              "caffeine": "2",
+              "overall": "3"
+            },
+            "other_comments": "Delicious matcha flavor! Satisfying and calming.",
+            "likeCount": "8"
+          },
+          {
+            "id": "6",
+            "name": "Espresso",
+            "price": "Php 80",
+            "shop": "Coffee Break",
+            "location": "Los Banos, Laguna",
+            "temperature": "Hot",
+            "size": "small",
+            "img": "../assets/images/espresso_coffeebreak.jpg",
+            "rating": {
+              "taste": "3",
+              "coldness": "1",
+              "caffeine": "5",
+              "overall": "3"
+            },
+            "other_comments": "A strong and classic shot of espresso. Gets me going in the morning!",
+            "likeCount": "6"
+          },
+          {
+            "id": "7",
+            "name": "Cappuccino",
+            "price": "Php 140",
+            "shop": "Coffee Hub",
+            "location": "Tagaytay, Cavite",
+            "temperature": "Hot",
+            "size": "medium",
+            "img": "../assets/images/cappuccino_coffeehub.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "1",
+              "caffeine": "3",
+              "overall": "4"
+            },
+            "other_comments": "Creamy and well-balanced. Perfect for a cozy afternoon.",
+            "likeCount": "9"
+          },
+          {
+            "id": "8",
+            "name": "Iced Latte",
+            "price": "Php 120",
+            "shop": "Milk & Beans",
+            "location": "Plaridel, Bulacan",
+            "temperature": "Iced",
+            "size": "large",
+            "img": "../assets/images/icedlatte_milkandbeans.jpg",
+            "rating": {
+              "taste": "3",
+              "coldness": "4",
+              "caffeine": "3",
+              "overall": "3"
+            },
+            "other_comments": "Refreshing and mildly sweet. The perfect pick-me-up!",
+            "likeCount": "4"
+          },
+          {
+            "id": "9",
+            "name": "Vanilla Latte",
+            "price": "Php 140",
+            "shop": "Vanilla Dreams",
+            "location": "Silang, Cavite",
+            "temperature": "Hot",
+            "size": "medium",
+            "img": "../assets/images/vanillalatte_vanilladreams.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "2",
+              "caffeine": "2",
+              "overall": "4"
+            },
+            "other_comments": "Lovely vanilla flavor with a comforting feel. My favorite!",
+            "likeCount": "11"
+          },
+          {
+            "id": "10",
+            "name": "Iced Mocha",
+            "price": "Php 150",
+            "shop": "Chill Beans",
+            "location": "Los Banos, Laguna",
+            "temperature": "Iced",
+            "size": "small",
+            "img": "../assets/images/icedmocha_chillbeans.jpg",
+            "rating": {
+              "taste": "5",
+              "coldness": "5",
+              "caffeine": "4",
+              "overall": "5"
+            },
+            "other_comments": "The perfect blend of chocolate and coffee. A delightful treat!",
+            "likeCount": "15"
+          },
+          {
+            "id": "11",
+            "name": "Hazelnut Latte",
+            "price": "Php 130",
+            "shop": "Hazelnut Haven",
+            "location": "Silang, Cavite",
+            "temperature": "Hot",
+            "size": "medium",
+            "img": "../assets/images/hazelnutlatte_hazelnuthaven.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "2",
+              "caffeine": "3",
+              "overall": "4"
+            },
+            "other_comments": "The rich hazelnut flavor is amazing! A delightful coffee treat.",
+            "likeCount": "9"
+          },
+          {
+            "id": "12",
+            "name": "Iced Caramel Macchiato",
+            "price": "Php 160",
+            "shop": "Cafe Delights",
+            "location": "Plaridel, Bulacan",
+            "temperature": "Iced",
+            "size": "large",
+            "img": "../assets/images/caramelmacchiato_cafedelights.jpg",
+            "rating": {
+              "taste": "5",
+              "coldness": "5",
+              "caffeine": "3",
+              "overall": "5"
+            },
+            "other_comments": "A delightful blend of caramel and espresso. Perfectly refreshing!",
+            "likeCount": "12"
+          },
+          {
+            "id": "13",
+            "name": "Vanilla Mocha",
+            "price": "Php 140",
+            "shop": "Bean Palace",
+            "location": "Los Banos, Laguna",
+            "temperature": "Hot",
+            "size": "small",
+            "img": "../assets/images/vanillamocha_beanpalace.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "2",
+              "caffeine": "3",
+              "overall": "4"
+            },
+            "other_comments": "A perfect mix of vanilla and chocolate. A delightful coffee indulgence!",
+            "likeCount": "8"
+          },
+          {
+            "id": "14",
+            "name": "Iced Green Tea Latte",
+            "price": "Php 120",
+            "shop": "Green Sips",
+            "location": "Tagaytay, Cavite",
+            "temperature": "Iced",
+            "size": "medium",
+            "img": "../assets/images/icedgreentealatte_greensips.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "5",
+              "caffeine": "2",
+              "overall": "4"
+            },
+            "other_comments": "Refreshing and soothing. A great way to enjoy green tea!",
+            "likeCount": "7"
+          },
+          {
+            "id": "15",
+            "name": "Caramel Macadamia Latte",
+            "price": "Php 150",
+            "shop": "Nuts & Brews",
+            "location": "Silang, Cavite",
+            "temperature": "Hot",
+            "size": "small",
+            "img": "../assets/images/caramacadmialatte_nutsandbrews.jpg",
+            "rating": {
+              "taste": "5",
+              "coldness": "2",
+              "caffeine": "3",
+              "overall": "4"
+            },
+            "other_comments": "The nutty blend with caramel is heavenly. A delightful coffee experience!",
+            "likeCount": "11"
+          },
+        {
+            "id": "31",
+            "name": "Caramel Macchiato",
+            "price": "Php 120",
+            "shop": "Coffee Haven",
+            "location": "Plaridel, Bulacan",
+            "temperature": "Iced",
+            "size": "small",
+            "img": "../assets/images/caramelmacchiato_coffeehaven.jpg",
+            "rating": {
+              "taste": "4",
+              "coldness": "4",
+              "caffeine": "3",
+              "overall": "4"
+            },
+            "other_comments": "A delightful blend of caramel and espresso. Perfectly refreshing!",
+            "likeCount": "8"
+        },
+        {
+            "id": "32",
+            "name": "Iced Americano",
+            "price": "Php 110",
+            "shop": "Coffee Junction",
+            "location": "Silang, Cavite",
+            "temperature": "Iced",
+            "size": "medium",
+            "img": "../assets/images/americano_coffeejunction.jpg",
+            "rating": {
+                "taste": "3",
+                "coldness": "3",
+                "caffeine": "4",
+                "overall": "3"
+            },
+            "other_comments": "A classic and strong iced coffee. Always hits the spot!",
+            "likeCount": "6"
+        },
+        {
+            "id": "33",
+            "name": "Chai Latte",
+            "price": "Php 110",
+            "shop": "Tea House",
+            "location": "Silang, Cavite",
+            "temperature": "Hot",
+            "size": "large",
+            "img": "../assets/images/chailatte_teahouse.jpg",
+            "rating": {
+                "taste": "3",
+                "coldness": "1",
+                "caffeine": "2",
+                "overall": "3"
+            },
+            "other_comments": "A comforting blend of spices. Perfect for a relaxing afternoon.",
+            "likeCount": "4"
+        },
+        {
+            "id": "34",
+            "name": "Mocha Frappuccino",
+            "price": "Php 170",
+            "shop": "Mocha Delights",
+            "location": "Tagaytay, Cavite",
+            "temperature": "Iced",
+            "size": "large",
+            "img": "../assets/images/mochafrap_mochadelights.jpg",
+            "rating": {
+                "taste": "4",
+                "coldness": "5",
+                "caffeine": "4",
+                "overall": "4"
+            },
+            "other_comments": "Rich and indulgent mocha flavor. Perfect for hot days!",
+            "likeCount": "9"
+        },
+        {
+            "id": "35",
+            "name": "Matcha Latte",
+            "price": "Php 130",
+            "shop": "Matcha Bliss",
+            "location": "Tagaytay, Cavite",
+            "temperature": "Hot",
+            "size": "small",
+            "img": "../assets/images/matchalatte_matchabliss.jpg",
+            "rating": {
+                "taste": "5",
+                "coldness": "2",
+                "caffeine": "2",
+                "overall": "4"
+            },
+            "other_comments": "A wonderful blend of matcha and milk. A perfect balance!",
+            "likeCount": "7"
+        }
+    ]
+}

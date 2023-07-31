@@ -15,8 +15,8 @@
         </div>
         <div v-else>
             <div class="coffees-near-you mx-20">
-                <p class="text-2xl">Coffee reviews near you</p>
-                <ShowReviews/>
+                <p class="text-3xl mb-7">Coffee reviews near you</p>
+                <ShowReviews :showLocation="true"/>
             </div>
         </div>
     </div>

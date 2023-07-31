@@ -3,7 +3,7 @@
         <div class="w-1/2">
             <div class="text-lg flex pr-5 rounded-xl search-box border-2 border-black">
                 <div class="px-4 search-field w-full flex align-center">                
-                    <i class="mt-3">
+                    <i class="mt-4">
                         <font-awesome-icon :icon="['fas', 'search']" />
                     </i>
                     <input class="focus:outline-none ml-3 w-11/12" type="text" placeholder="Search by coffee, coffee shop or location...">

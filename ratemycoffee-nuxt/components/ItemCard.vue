@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- if review card, show review details -->
         <div class="border-2 m-2 rounded-xl review-container">
             <img :src="item.img" class="review-img rounded-t-xl">
             <p class="text-xl mt-3 ml-5">{{ item.name }}</p>
@@ -9,7 +10,7 @@
 </template>
 
 <script setup>
-    const { item, showLocation } = defineProps(["item", "showLocation"])
+    const { item, showLocation} = defineProps(["item", "showLocation"])
 </script>
 
 <style scoped> 

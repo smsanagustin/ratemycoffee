@@ -9,7 +9,7 @@
                     <input class="focus:outline-none ml-3 w-11/12" type="text" placeholder="Search coffee shop">
                 </div>
                 <div class="search-button">
-                    <p class="button-text"><span class="">Search</span></p>
+                    <p class="button-text hover:text-maintheme"><span class="">Search</span></p>
                 </div>
             </div>
         </div>
@@ -17,16 +17,6 @@
 </template>
 
 <script setup>
-    const option = ref('Search by coffee')
-    const showCategory = ref(false);
-
-    const toggleShowCategory = () => {
-        showCategory.value = !showCategory.value
-    }
-    const switchOption = (event) => {
-        option.value = event.target.outerText
-        toggleShowCategory()
-    }
 </script>
 
 <style  scoped>

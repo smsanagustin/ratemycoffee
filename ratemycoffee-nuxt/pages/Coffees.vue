@@ -1,8 +1,8 @@
 <template>
     <div>
-        <SearchCoffeeShop class="my-14"/>
+        <SearchCoffee class="my-14"/>
         <div class="rounded-xl border-2 grid grid-cols-3 gap-x-6 p-8" >
-            <ItemCard v-for="coffeeShop in coffeeShops" :item="coffeeShop"/>
+            <ItemCard v-for="coffee in coffees" :item="coffee"/>
         </div>
     </div>
 </template>
@@ -10,8 +10,7 @@
 <script setup>
     const {data: reviews} = await useFetch('http://localhost:3000/reviews')
 
-    const coffeeShops = getCoffeeShops(reviews.value);
-    console.log(coffeeShops)
+    const coffees = getCoffees(reviews.value);
 </script>
 
 <style lang="scss" scoped>

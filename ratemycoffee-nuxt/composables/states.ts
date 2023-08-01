@@ -1,0 +1,1 @@
+export const useUserLocation = () => useState<string>("userLocation", () => "");

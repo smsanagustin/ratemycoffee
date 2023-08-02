@@ -1,7 +1,10 @@
 <template>
     <div>
         <SearchCoffee class="my-14"/>
-        <div class="rounded-xl border-2 grid grid-cols-3 gap-x-6 p-8" >
+        <div class="mx-20 mb-7">
+            <p class="text-3xl">Coffees</p>
+        </div>
+        <div class="mx-20 rounded-xl border-2 grid grid-cols-3 gap-x-6 p-8" >
             <ItemCard v-for="coffee in coffees" :item="coffee"/>
         </div>
     </div>

@@ -13,7 +13,7 @@
             </div>
         </div>
         <div v-else>
-            <div class="coffees-near-you mx-20">
+            <div class="mx-20">
                 <p class="text-3xl mb-7">Coffee reviews near you</p>
                 <ShowReviews :showLocation="true" :location="userLocation" class="mb-7"/>
             </div>

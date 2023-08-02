@@ -6,7 +6,18 @@
                 <img :src="review.img" class="review-image rounded-xl">
             </div>
             <div class="mt-16">
-                <p class="text-5xl font-bold">{{ review.name }}</p>
+                <p class="text-5xl font-bold">{{ review.name }}
+                <span class="ml-5">
+                    <button @click="likeReview" class="mr-4">
+                        <font-awesome-icon v-if="!liked" :icon="['far', 'heart']" size="xs" />
+                        <font-awesome-icon v-else :icon="['fas', 'heart']" size="xs" />
+                    </button>
+                    <button @click="saveReview">
+                        <font-awesome-icon v-if="!saved"  size="xs" :icon="['far', 'bookmark']" />
+                        <font-awesome-icon v-else size="xs" :icon="['fas', 'bookmark']" />
+                    </button>
+                </span>
+                </p>
                 <div class="mt-8 text-lg">
                     <div class="grid grid-cols-2">   
                         <div>
@@ -47,9 +58,18 @@
 <script setup>
     const { id } = useRoute().params
     const uri = 'http://localhost:3000/reviews/' + id
+    const saved = ref(false)
+    const liked = ref(false)
 
     // fetch review details
     const { data: review } = await useFetch(uri)
+
+    const likeReview = () => {
+        liked.value = !liked.value
+    }
+    const saveReview = () => {
+        saved.value = !saved.value
+    }
 </script>
 
 <style scoped>

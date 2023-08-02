@@ -2,7 +2,7 @@
     <div>
         <div class="rounded-xl border-2 grid grid-cols-3 gap-x-6 p-8">
             <NuxtLink 
-             v-for="review in reviewsByLocation" 
+                 v-for="review in reviewsByLocation" 
              :to="`/reviews/${review.id}`">
                 <ItemCard 
                     :key="review"

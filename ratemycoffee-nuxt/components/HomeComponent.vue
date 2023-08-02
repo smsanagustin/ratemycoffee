@@ -30,7 +30,7 @@
     const places = ['Silang, Cavite', 'Tagaytay, Cavite', 'Los Banos, Laguna', 'Plaridel, Bulacan']
 
     const placesBasedOnUserInput = computed(() => {
-        return places.filter(place => place.toLowerCase().includes(locationInput.value))
+        return places.filter(place => place.toLowerCase().includes(locationInput.value.toLowerCase()))
     })
 
     const setLocation = (event) => {

@@ -9,6 +9,7 @@
                     <li><NuxtLink to="/">HOME</NuxtLink></li>
                     <li><NuxtLink to="/coffeeshops">COFFEE SHOPS</NuxtLink></li>
                     <li><NuxtLink to="/coffees">COFFEES</NuxtLink></li>
+                    <li><NuxtLink to="/saved-reviews">SAVED REVIEWS</NuxtLink></li>
                 </ul>
                 <button class="bg-white rounded-md px-5 py-3 font-bold">
                     <span class="text-maintheme text-sm">WRITE A REVIEW</span>

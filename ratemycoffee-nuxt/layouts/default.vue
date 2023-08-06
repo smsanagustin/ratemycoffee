@@ -11,9 +11,9 @@
                     <li><NuxtLink to="/coffees">COFFEES</NuxtLink></li>
                     <li><NuxtLink to="/saved-reviews">SAVED REVIEWS</NuxtLink></li>
                 </ul>
-                <button class="bg-white rounded-md px-5 py-3 font-bold">
+                <NuxtLink to="/writereview" class="bg-white rounded-lg px-5 py-2 cursor-pointer">
                     <span class="text-maintheme text-sm">WRITE A REVIEW</span>
-                </button>
+                </NuxtLink>
             </nav>
         </header>
         <div>

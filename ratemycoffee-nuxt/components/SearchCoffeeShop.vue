@@ -6,7 +6,7 @@
                     <i class="mt-2">
                         <font-awesome-icon :icon="['fas', 'search']" />
                     </i>
-                    <input class="focus:outline-none ml-3 w-11/12" type="text" placeholder="Search coffee shop">
+                    <input v-model="searchQuery" class="focus:outline-none ml-3 w-11/12" type="text" placeholder="Search coffee shop">
                 </div>
                 <div class="search-button">
                     <p class="button-text hover:text-maintheme"><span class="">Search</span></p>
@@ -17,6 +17,7 @@
 </template>
 
 <script setup>
+    const searchQuery = useSearchQueryForCoffeeShop()
 </script>
 
 <style  scoped>

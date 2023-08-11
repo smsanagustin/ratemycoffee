@@ -7,6 +7,7 @@ export const useShowSearchResults = () => useState<boolean>("showSearchResults",
 export const useShowHomeComponent = () => useState<boolean>("showHomeComponent", () => true);
 export const useSearchQuery = () => useState<string>("searchQuery", () => "");
 export const useSearchQueryForCoffee = () => useState<string>("searchQueryForCoffee", () => "");
+export const useSearchQueryForCoffeeShop = () => useState<string>("searchQueryForCoffeeShop", () => "");
 export const useOption = () => useState<string>("option", () => "Search by coffee");
 export const useSavedReviews = () => useState<Array<{ 
     id: number;

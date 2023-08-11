@@ -62,6 +62,15 @@
     const saved = ref(false) 
     const liked = ref(false)
     const savedReviews = useSavedReviews()
+    const savedReviewsList = useSavedReviewsList()
+
+    // checks if review has been already saved
+    for (var i = 0; i < savedReviewsList.value.length; i++) {
+        if (savedReviewsList.value[i] === id) {
+            saved.value = true;
+            break;
+        }
+    }
 
     // fetch review details
     const { data: review } = await useFetch(uri)
@@ -79,6 +88,7 @@
             }
 
             savedReviews.value.push(newObj)
+            savedReviewsList.value.push(id)
         }
         else {
             saved.value = !saved.value

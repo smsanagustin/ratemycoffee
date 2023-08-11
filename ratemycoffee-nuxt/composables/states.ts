@@ -9,6 +9,7 @@ export const useSearchQuery = () => useState<string>("searchQuery", () => "");
 export const useSearchQueryForCoffee = () => useState<string>("searchQueryForCoffee", () => "");
 export const useSearchQueryForCoffeeShop = () => useState<string>("searchQueryForCoffeeShop", () => "");
 export const useOption = () => useState<string>("option", () => "Search by coffee");
+export const useSavedReviewsList = () => useState<Array<string>>("savedReviewsList", () => []);
 export const useSavedReviews = () => useState<Array<{ 
     id: number;
     name: string;

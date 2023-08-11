@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BackButton class="mt-8 ml-20"/>
+        <BackButton class="mt-8 ml-14"/>
         <p class="text-3xl ml-20 my-8">Showing {{ name }} Reviews ({{ coffeeReviews.length }})</p>
         <div class="mx-20 mb-10 rounded-xl border-2 grid grid-cols-3 gap-x-6 p-8">
             <div v-for="review in coffeeReviews">

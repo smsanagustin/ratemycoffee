@@ -1,8 +1,9 @@
 <template>
-    <div class="mt-20">
-        <div class="mx-20 mb-7">
+    <div>
+        <BackButton class="mt-14 ml-14"/>
+        <div class="mx-20 mt-8 mb-7">
             <p class="text-3xl">Saved Reviews</p>
-            <div v-if="savedReviews.length" class="coffee-sort-wrapper mr-24 mt-40">
+            <div v-if="savedReviews.length" class="coffee-sort-wrapper mr-24 mt-60">
                 <SavedReviewsSort/>
             </div>
         </div>

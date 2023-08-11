@@ -93,6 +93,7 @@
         else {
             saved.value = !saved.value
             savedReviews.value = savedReviews.value.filter((review) => review.id !== id)
+            savedReviewsList.value = savedReviewsList.value.filter((id) => id !== id)
         }
     }
 </script>

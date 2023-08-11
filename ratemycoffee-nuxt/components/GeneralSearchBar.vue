@@ -6,11 +6,15 @@
                     <i class="mt-2">
                         <font-awesome-icon :icon="['fas', 'search']" />
                     </i>
-                    <input class="focus:outline-none ml-3 w-11/12" type="text" placeholder="Search by coffee, coffee shop or location...">
+                    <input v-model="searchQuery" @keyup="handleEnterKey" class="focus:outline-none ml-3 w-11/12" type="text" placeholder="Search by coffee, coffee shop or location...">
                 </div>
                 <div class="dropdown">
-                    <p class="default-option"><span class="">{{ option }}</span></p>
-                    <ul v-if="showCategory">
+                    <NuxtLink :to="`/${option.replace(/\s/g, '')}`">
+                        <div>
+                            <p class="default-option"><span class="">{{ option }}</span></p>
+                        </div> 
+                    </NuxtLink>
+                   <ul v-if="showCategory">
                         <li @click="switchOption">Search by coffee</li>
                         <li @click="switchOption">Search by coffee shop</li>
                         <li @click="switchOption">Search by location</li>
@@ -28,8 +32,9 @@
 </template>
 
 <script setup>
-    const option = ref('Search by coffee')
+    const option = useOption() 
     const showCategory = ref(false);
+    const searchQuery = useSearchQuery()
 
     const toggleShowCategory = () => {
         showCategory.value = !showCategory.value
@@ -38,6 +43,13 @@
         option.value = event.target.outerText
         toggleShowCategory()
     }
+
+    const handleEnterKey = async (e) => { 
+        if (e.key === 'Enter' && searchQuery.value) {
+            await navigateTo(`/${option.value.replace(/\s/g, '')}`);
+        }
+    }
+
 </script>
 
 <style  scoped>

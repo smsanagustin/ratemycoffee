@@ -1,7 +1,9 @@
 <template>
     <div>
         <GeneralSearchBar class="m-12"/>
-        <HomeComponent/>
+        <div>
+            <HomeComponent/>
+        </div>
     </div>
 </template>
 

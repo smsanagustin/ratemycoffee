@@ -6,7 +6,7 @@
                 <SavedReviewsSort/>
             </div>
         </div>
-        <div v-if="savedReviews.length" class="mx-20 rounded-xl border-2 grid grid-cols-3 gap-x-6 p-8" >
+        <div v-if="savedReviews.length" class="mx-20 mb-10 rounded-xl border-2 grid grid-cols-3 gap-x-6 p-8" >
             <NuxtLink v-for="review in savedReviews" :to="`/reviews/${review.id}`">
                  <ItemCard :item="review"/>
             </NuxtLink>

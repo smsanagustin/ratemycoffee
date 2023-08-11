@@ -21,7 +21,7 @@
     console.log(location)
 
     const reviewsByLocation = computed(() => {
-        return reviews.value.filter(review => review.location == location)
+        return reviews.value.filter(review => review.location.toLowerCase().includes(location.toLowerCase()))
     })
 </script>
 

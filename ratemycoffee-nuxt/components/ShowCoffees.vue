@@ -6,7 +6,9 @@
             </div>
         </div>
         <div class="mx-20 mb-10 rounded-xl border-2 grid grid-cols-3 gap-x-6 p-8" >
-            <ItemCard v-for="coffee in coffees" :item="coffee"/>
+            <NuxtLink v-for="coffee in coffees" :to="`/coffee/${coffee.name}`">
+                <ItemCard :item="coffee"/>
+            </NuxtLink>
         </div>
     </div>
 </template>

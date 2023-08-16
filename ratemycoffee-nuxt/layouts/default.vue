@@ -6,10 +6,10 @@
                     <NuxtLink class="font-bold text-4xl" to="/">ratemycoffee</NuxtLink>
                 </div>
                 <ul class="flex gap-14 mt-2">
-                    <li><NuxtLink to="/">HOME</NuxtLink></li>
-                    <li><NuxtLink to="/coffeeshops">COFFEE SHOPS</NuxtLink></li>
-                    <li><NuxtLink to="/coffees">COFFEES</NuxtLink></li>
-                    <li><NuxtLink to="/saved-reviews">SAVED REVIEWS</NuxtLink></li>
+                    <li><NuxtLink to="/" class="hover:underline">HOME</NuxtLink></li>
+                    <li><NuxtLink to="/coffeeshops" class="hover:underline">COFFEE SHOPS</NuxtLink></li>
+                    <li><NuxtLink to="/coffees" class="hover:underline">COFFEES</NuxtLink></li>
+                    <li><NuxtLink to="/saved-reviews" class="hover:underline">SAVED REVIEWS</NuxtLink></li>
                 </ul>
                 <NuxtLink to="/writereview" class="bg-white rounded-lg px-5 py-2 cursor-pointer">
                     <span class="text-maintheme text-sm">WRITE A REVIEW</span>

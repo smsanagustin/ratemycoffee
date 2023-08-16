@@ -15,9 +15,15 @@
                         </div> 
                     </NuxtLink>
                    <ul v-if="showCategory">
-                        <li @click="switchOption">Search by coffee</li>
-                        <li @click="switchOption">Search by coffee shop</li>
-                        <li @click="switchOption">Search by location</li>
+                        <li @click="switchOption">
+                            Search by coffee
+                        </li>
+                        <li @click="switchOption">
+                            Search by coffee shop
+                        </li>
+                        <li @click="switchOption">
+                            Search by location
+                        </li>
                     </ul>
                 </div>
                 <i v-if="!showCategory" class="mt-2 px-4" @click="toggleShowCategory">
@@ -39,13 +45,14 @@
     const toggleShowCategory = () => {
         showCategory.value = !showCategory.value
     }
-    const switchOption = (event) => {
+    const switchOption = async (event) => {
         option.value = event.target.outerText
         toggleShowCategory()
+        await navigateTo(`/${option.value.replace(/\s/g, '')}`);
     }
 
-    const handleEnterKey = async (e) => { 
-        if (e.key === 'Enter' && searchQuery.value) {
+    const handleEnterKey = async (event) => { 
+        if (event.key === 'Enter' && searchQuery.value) {
             await navigateTo(`/${option.value.replace(/\s/g, '')}`);
         }
     }

@@ -8,7 +8,7 @@
                     <div class="ml-32">
                         <div>
                             <input v-model="name" required class="input-bars" type="text" placeholder="Coffee name"><br> 
-                            <input v-model="price" required class="input-bars" type="text" placeholder="Price in PHP"><br>
+                            <input v-model="price" required class="input-bars" type="number" placeholder="Price in PHP"><br>
                             <input v-model="shop" required class="input-bars" type="text" placeholder="Coffee shop"><br> 
                             <input v-model="location" required class="input-bars" type="text" placeholder="Location"><br> 
                         </div>
@@ -105,4 +105,10 @@ import { faShoePrints } from '@fortawesome/free-solid-svg-icons';
 .main-theme {
     background-color: #B08968;
 }
+.main-theme:hover {
+    background-color: white;
+    color: #B08968;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 </style>
